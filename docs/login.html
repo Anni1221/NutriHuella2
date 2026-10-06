@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión | NutriHuella</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head><body>
+<nav class="navbar navbar-expand-lg nh-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-800" href="index.html">
+            <span class="brand-paw">
+                🐾
+            </span>
+            Nutri
+            <span>
+                Huella
+            </span>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Mi mascota
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Nutrición
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Recetas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Seguimiento
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-demo="1">
+                        Educación
+                    </a>
+                </li>
+                
+                <li class="nav-item ms-lg-2">
+                    
+                    <a class="btn btn-primary-soft" href="login.html">
+                        Iniciar sesión
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container login-wrap">
+    <div class="login-card w-100">
+        <div class="form-card">
+            <div class="text-center mb-4">
+                <div class="pet-avatar mx-auto mb-3">
+                    🐾
+                </div>
+                <h2 class="fw-800">
+                    Bienvenido a NutriHuella
+                </h2>
+                <p class="muted">
+                    Ingresa para continuar.
+                </p>
+            </div>
+            <form action="#">
+                
+                <label class="form-label fw-bold">
+                    Correo electrónico
+                </label>
+                <input type="email" name="correo" value="" class="form-control mb-3" placeholder="correo@ejemplo.com" required>
+                <label class="form-label fw-bold">
+                    Contraseña
+                </label>
+                <div class="input-group mb-4">
+                    <input type="password" name="clave" id="clave" class="form-control" placeholder="••••••••" required>
+                    <button type="button" class="btn btn-outline-secondary" data-ver-clave="clave" aria-label="Mostrar contraseña">Mostrar</button>
+                </div>
+                <button class="btn btn-primary w-100">
+                    Ingresar
+                </button>
+            </form>
+            <p class="text-center mt-3 mb-0">
+                ¿No tienes cuenta? 
+                <a class="fw-bold" href="registro.html" style="color:var(--green)">
+                    Regístrate
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<p class="text-center small muted mt-4 mb-0">Vista de demostración: en GitHub Pages no hay servidor PHP ni base de datos, por eso los formularios son solo visuales.</p>
+<footer class="nh-footer mt-5">
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <h5>
+                    🐾 NutriHuella
+                </h5>
+                <p>
+                    Una guía digital para acompañar la transición hacia una alimentación más saludable para perros y gatos.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h6>
+                    Explora
+                </h6>
+                <a href="#" data-demo="1">
+                    Recetas
+                </a>
+                <a href="#" data-demo="1">
+                    Transición
+                </a>
+                <a href="#" data-demo="1">
+                    Preguntas frecuentes
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h6>
+                    Importante
+                </h6>
+                <p class="small">
+                    La información del proyecto es educativa y no reemplaza la valoración de un médico veterinario.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="small text-center">
+            © 2026 NutriHuella · Proyecto académico
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+document.querySelectorAll('[data-demo]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Esta sección solo está disponible en la versión con servidor (Apache + PHP + MySQL).');}));
+document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();if(!document.querySelector('.is-invalid'))alert('Demostración: sin servidor PHP no se puede enviar el formulario.');}));
+</script>
+</body></html>
